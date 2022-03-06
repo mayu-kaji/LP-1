@@ -1,0 +1,462 @@
+@charset "UTF-8";
+
+body {
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #333;
+  background-color: #060038f5;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+/*ここから*/
+
+header {
+  position: fixed;
+  z-index: 100;
+}
+.header_all{
+  width: 100%;
+  background-color: white;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header_nav ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.header_nav ul li {
+  display: table-cell;
+}
+
+.header_nav ul li a {
+  display: block;
+  margin: 25px;
+  padding: 5px;
+  text-align: center;
+  font-style: 16px;
+}
+
+.header_nav ul li a:hover{
+  color: #888;
+  border-bottom: solid 2px #ccc;
+}
+
+.header_nav ul li a span {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+/*top写真*/
+.top_all {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  background: url("../img/top.png") no-repeat right; 
+  margin-bottom: -60px;
+}
+
+.top_all::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 93%;
+  background-color: rgba(0, 0, 0, 0.171);
+  
+  
+}
+
+.top_inner {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left:5%;
+}
+
+.top_inner h1 {
+  font-size: 70px;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.top_inner h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  margin: -30px 0 40px 20px;
+}
+
+.heading {
+  width: 100%;
+  padding:18px 36px;
+  clip-path: polygon(0 0 ,470px 0, 100% 50%, 470px 100%, 0 100%);
+  background-color: #ffd54b;
+  margin-bottom: 20px;
+}
+
+.top_inner p {
+  font-size: 25px;
+  color: #202020;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.section {
+  padding: 150px 0;
+  border-top: solid 3px #fe9;
+}
+
+.section:nth-child(odd) {
+  background-color: #060038f5;
+}
+
+.section:nth-child(even) {
+  background-color: #fff;
+}
+
+
+.about_img {
+  position: relative;
+}
+
+.about_img::after {
+  content: "";
+  position: absolute;
+  background: url(../img/about.png) no-repeat center;
+  background-size: cover;
+  top: 0;
+  right: 50%;/*右から50％の幅にする、つまり左側に配置*/
+  width: 50%;
+  height: 100%;
+}
+
+.concept_img {
+  position: relative;
+}
+
+.concept_img::after {
+  content: "";
+  position: absolute;
+  background: url(../img/concept.png);
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.descript {
+  width: 40%;
+  margin-left: 70%;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  line-height: 1.4;
+  font-size: 40px;
+  font-weight: bold;
+  color: #202020;
+}
+
+.title span {
+  display: block;
+  font-size: 20px;
+}
+
+.txt h3{
+  font-size: 30px;
+  color: #202020;
+  margin-bottom: 30px;
+}
+
+.txt p {
+  color: #202020;
+}
+
+.txt p strong {
+  font-weight: bold;
+  color: #202020;
+  background: linear-gradient(transparent 80%, #fbc617);
+}
+
+.descript_left {
+  width: 40%;
+  height: 70%;
+  margin-left: -100px;
+}
+
+.title2 {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  line-height: 1.4;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.title2 span {
+  display: block;
+  font-size: 20px;
+}
+
+.txt2 h3{
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.txt2 p {
+  color: #fff;
+}
+
+.txt2 p strong {
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(transparent 80%, #fe9);
+}
+
+.frame {
+  display: inline-table;
+  width: 100%;
+  height: 10%;
+  background-color: #cce6ff;
+  border-radius: 10px;
+  margin: 30px ;
+  padding: 60px;
+}
+
+.txt_content {
+  display: inline-table;
+  width: 30%;
+  padding: 0 15px;
+}
+
+.frame h3 {
+  font-size: 30px;
+  color: #202020;
+  margin-bottom: 30px;
+}
+
+.frame span {
+  display: block;
+  font-size: 20px;
+}
+
+.sub_title {
+  position: relative;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0;
+}
+
+
+/*spanにした*/
+.sub_title span::after {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  z-index: 1;
+  top: 50%;  
+  width: 40%;
+  height: 2px;
+  margin: -1px 0 0 5px;
+}
+
+.sub_title span {
+  display: block;
+  position: relative;
+  padding-right: 10px;
+}
+
+.photo_content {
+  display: inline-table;
+  width: 30%;
+  margin: 15px;
+}
+
+.photo {
+  width: 100%;
+}
+
+.price_content {
+  display: inline-table;
+  width: 30%;
+  padding: 10px;
+}
+
+.price {
+  font-size: 17px;
+  text-align: center;
+  color: #ad0303;
+  padding-top: 15px;
+}
+
+.price span {
+  display: inline;
+  margin-right: 5px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.price em {
+  font-style: italic ;
+  font-size: 45px;
+}
+
+.frame_course {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 40px;
+}
+
+.course_bg {
+  background-color: rgb(223, 223, 223);
+  height: 300px;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro_img {
+  padding-right: 20px;
+}
+
+.txt3 h3 {
+  font-size: 22px;
+  margin-top: 24px;
+}
+.txt3 span {
+  font-size: 18px;
+}
+
+table th {
+  padding-right: 10px;
+  border-right: solid 3px #ad0303;
+}
+
+/*.txtなしにした*/
+table td {
+  padding-left: 10px;
+}
+
+.txt span {
+  display: block;
+}
+/*QUESTION*/
+.question_box dt {
+  padding: 10px 10px 10px 35px;
+  border-radius: 5px;
+  background: #cce6ff;
+  text-indent: -25px;
+  }
+  .question_box dt:before {
+  content: "Q.";
+  font-weight: bold;
+  margin-right: 7px;
+  }
+  .question_box dd {
+  margin: 20px 10px 40px 35px;
+  text-indent: -25px;
+  }
+  .question_box dd:before {
+  content: "A.";
+  color: #1771c6;
+  font-weight: bold;
+  margin-right: 7px;
+  }
+
+
+.blog_block {
+  display: inline-table;
+  margin: 5px;
+}
+.blog_body {
+  margin-top: 10px;
+}
+
+.blog_body h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.blog_body p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.button {
+  text-align: center;
+  padding: 15px;
+  background-color: #1771c6;
+  border-radius: 10px;
+  width: 25%;
+  margin: 0 auto 50px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color:#1771c6c0;
+}
+
+.button a {
+  font-size: 18px;
+  color: #fff;
+}
+
+/*フッターの色候補 赤#b31818bb 青#144da0 黄*/
+.bottom {
+  background-color: #af7a00;
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer_logo {
+  text-align: center;
+}
+
+.bottom_logo img{
+  width: 200px;
+}
+
+.footer_sns {
+  text-align: center;
+  list-style: none;
+}
+
+.footer_sns li a img {
+  width: 70px;
+}
